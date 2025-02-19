@@ -9,6 +9,8 @@ applications:
         build:
           commands:
             - npx turbo build --filter=docs...
+            - ls amplify-compute-bundle-output/
+            -ls amplify-compute-bundle-output/compute/default/
       artifacts:
         baseDirectory: apps/docs/.next
         files:
