@@ -10,6 +10,7 @@ applications:
           commands:
             - npx turbo build --filter=docs...
         postBuild:
+          commands:
             - mv ./node_modules ../../node_modules
       artifacts:
         baseDirectory: apps/docs/.next
