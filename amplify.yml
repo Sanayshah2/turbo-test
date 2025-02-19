@@ -9,6 +9,8 @@ applications:
         build:
           commands:
             - npx turbo build --filter=docs...
+        postBuild:
+          commands:
             - ls amplify-compute-bundle-output/
             - ls amplify-compute-bundle-output/compute/default/
       artifacts:
@@ -18,4 +20,4 @@ applications:
       cache:
         paths:
           - node_modules/**/*
-    appRoot: apps/product-frontend/apps/docs
+    appRoot: apps/product-frontend/apps/docs    
