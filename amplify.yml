@@ -9,7 +9,7 @@ applications:
         build:
           commands:
             - npx turbo build --filter=docs...
-        postBuild:
+        deploy:
           commands:
             - ls -al
             - ls amplify-compute-bundle-output/
