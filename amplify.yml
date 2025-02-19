@@ -1,7 +1,6 @@
 version: 1
 applications:
   - frontend:
-      buildPath: apps/product-frontend
       phases:
         preBuild:
           commands:
@@ -9,11 +8,6 @@ applications:
         build:
           commands:
             - npx turbo build --filter=docs...
-        deploy:
-          commands:
-            - ls -al
-            - ls amplify-compute-bundle-output/
-            - ls amplify-compute-bundle-output/compute/default/
       artifacts:
         baseDirectory: apps/docs/.next
         files:
