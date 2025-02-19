@@ -6,10 +6,11 @@ applications:
         preBuild:
           commands:
             - npm ci --cache .npm --prefer-offline
-            - mv ./node_modules ../../node_modules
         build:
           commands:
             - npx turbo build --filter=docs...
+        postBuild:
+            - mv ./node_modules ../../node_modules
       artifacts:
         baseDirectory: apps/docs/.next
         files:
