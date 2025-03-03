@@ -5,14 +5,11 @@ applications:
       phases:
         preBuild:
           commands:
-            - nvm use 14
+            - nvm use 18
             - npm ci --cache .npm --prefer-offline
         build:
           commands:
             - npx turbo build --filter=docs...
-        postBuild:
-          commands:
-            - mv ./node_modules ../../node_modules
       artifacts:
         baseDirectory: apps/docs/.next
         files:
