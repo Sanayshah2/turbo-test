@@ -8,6 +8,7 @@ applications:
       phases:
         preBuild:
           commands:
+            - export SANAY=testValue
             - export TESTVARIABLE=hello
             - export VAR=variable2
             - nvm use 22
