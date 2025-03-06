@@ -1,4 +1,7 @@
 version: 1
+env:
+  variables:
+    SANAY: testValue
 applications:
   - frontend:
       buildPath: /
