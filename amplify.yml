@@ -8,6 +8,7 @@ applications:
       phases:
         preBuild:
           commands:
+            - export TESTVARIABLE=hello
             - nvm use 22
             - npm ci --cache .npm --prefer-offline
         build:
