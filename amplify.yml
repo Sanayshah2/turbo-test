@@ -5,6 +5,7 @@ applications:
       phases:
         preBuild:
           commands:
+            - export SANAY=TestValue
             - nvm use 22
             - npm ci --cache .npm --prefer-offline
         build:
