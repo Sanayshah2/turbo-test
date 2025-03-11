@@ -12,7 +12,8 @@ applications:
             - export HEY=hey
             - export TESTVARIABLE=hello
             - export VAR1=variable2
-            - node --version
+            - nvm install 18
+            - nvm use 18
             - npm ci --cache .npm --prefer-offline
         build:
           commands:
