@@ -9,6 +9,7 @@ applications:
         preBuild:
           commands:
             - export SANAY=testVal
+            - export HEY=hey
             - export TESTVARIABLE=hello
             - export VAR1=variable2
             - nvm use 22
