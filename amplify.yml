@@ -9,6 +9,7 @@ applications:
         preBuild:
           commands:
             - export SANAY=testVal
+            - export GIT_TOKE=token
             - export TESTVARIABLE=hello
             - export VAR1=variable2
             - npm ci --cache .npm --prefer-offline
