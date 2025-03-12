@@ -9,7 +9,6 @@ applications:
         preBuild:
           commands:
             - export SANAY=testVal
-            - export HEY=hey
             - export TESTVARIABLE=hello
             - export VAR1=variable2
             - npm ci --cache .npm --prefer-offline
