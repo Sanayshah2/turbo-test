@@ -8,6 +8,7 @@ applications:
       phases:
         preBuild:
           commands:
+            - nvm --version
             - export SANAY=testVal
             - export GIT_TOKE=token
             - export TESTVARIABLE=hello
