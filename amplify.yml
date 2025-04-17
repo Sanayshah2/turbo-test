@@ -9,7 +9,7 @@ applications:
         preBuild:
           commands:
             - node --version
-            - export SANAY=testVal
+            - export SANAY=test
             - export GIT_TOKE=token
             - export TESTVARIABLE=hello
             - export VAR1=variable2
